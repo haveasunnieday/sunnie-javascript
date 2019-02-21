@@ -46,6 +46,37 @@
     let greeting = "My name is " + name;
     console.log(greeting);
 
+    console.log("We are building functions");
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    console.log(makeSquare(3));
+    console.log(makeSquare(15));
+    console.log(makeSquare(7));
+
+    let squareOf21 = makeSquare(21);
+    console.log(squareOf21);
+
+    // functions on my own
+    function makeName(first, middle, last) {
+      let fullName = first + " " + middle + " " + last
+      return fullName;
+    }
+
+    console.log(makeName('Sunnie', 'None', 'Lee'));
+    console.log(makeName('Sir', 'Cookie', 'Monster'));
+    console.log(makeName('Gregory', 'UT', 'Fenves'));
+    console.log(makeName('Robert', '"Beto"', 'O\'Rourke'));
+
+    console.log(makeName('Sunnie', 'None', 'Lee').length);
+    console.log(makeName('Sir', 'Cookie', 'Monster').length);
+
+    console.log(makeName('Sunnie', 'None', 'Lee').toUpperCase());
+
     /*
     FYI that this is a comment, too
     but it can be on more then one line
