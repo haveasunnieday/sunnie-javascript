@@ -48,7 +48,7 @@
 
     console.log("We are building functions");
 
-    // function to make square numbers
+    // Function to make square numbers
     function makeSquare(theNumb) {
       let squared = theNumb * theNumb;
       return squared;
@@ -61,26 +61,57 @@
     let squareOf21 = makeSquare(21);
     console.log(squareOf21);
 
-    // functions on my own
+    // Functions on my own
     function makeName(first, middle, last) {
       let fullName = first + " " + middle + " " + last
       return fullName;
     }
 
     console.log(makeName('Sunnie', 'None', 'Lee'));
-    console.log(makeName('Sir', 'Cookie', 'Monster'));
+    console.log(makeName('Kermit', 'The', 'Frog'));
     console.log(makeName('Gregory', 'UT', 'Fenves'));
     console.log(makeName('Robert', '"Beto"', 'O\'Rourke'));
 
     console.log(makeName('Sunnie', 'None', 'Lee').length);
-    console.log(makeName('Sir', 'Cookie', 'Monster').length);
-
+    console.log(makeName('Kermit', 'The', 'Frog').length);
     console.log(makeName('Sunnie', 'None', 'Lee').toUpperCase());
 
     /* this is the way Prof McDonald did it, makes a new variable
     let fullNameReturn = makeFullName("Christian", "Clay", "McDonald");
     console.log(fullNameReturn.toUpperCase())
     */
+
+    console.log('Making a better name function');
+    // Make a name with middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      } else {
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+        }
+      }
+    
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("Donald", "F", "Trump"));
+
+    // Flow control functions on my own
+    function makeScore (home, away) {
+      if (home == away) {
+        return "It was a tie.";
+        } else if (home > away) {
+        return "The home team won."; 
+      } else {
+        return "The away team won.";
+      }
+    }
+
+    console.log(makeScore(4, 8));
+    console.log(makeScore(8, 6));
+    console.log(makeScore(8, 8));
+    console.log(makeScore(32345, 435453));
     
     /*
     FYI that this is a comment, too
